@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+.white-text {
+  color: hsl(0, 100%, 100%);
+}
+
+.regular-text {
+  font-weight: 400;
+}
+
+.medium-text {
+  font-weight: 500;
+}
+
+.semi-bold-text {
+  font-weight: 600;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  background: hsl(0, 100%, 74%) url("../images/bg-intro-desktop.png");
+}
+
+.component {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  padding: 50px 120px;
+  margin: 35px 0;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-heading {
+  font-size: 40px;
+  line-height: 47px;
+  width: 50%;
+}
+
+.text-paragraph {
+  font-size: 13px;
+  line-height: 22px;
+  width: 65%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input {
+  display: block;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
