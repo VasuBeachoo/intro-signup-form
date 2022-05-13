@@ -6,6 +6,14 @@ body {
   color: hsl(0, 100%, 100%);
 }
 
+.grey-text {
+  color: hsl(246, 25%, 77%);
+}
+
+.red-text {
+  color: hsl(0, 100%, 74%);
+}
+
 .regular-text {
   font-weight: 400;
 }
@@ -20,6 +28,10 @@ body {
 
 .bold-text {
   font-weight: 700;
+}
+
+.light-opacity-text {
+  opacity: 0.8;
 }
 
 .component-container {
@@ -41,18 +53,21 @@ body {
 .text-section {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .text-heading {
   font-size: 40px;
   line-height: 47px;
-  width: 50%;
+  width: 70%;
+  margin-bottom: 10px;
 }
 
 .text-paragraph {
   font-size: 13px;
   line-height: 22px;
-  width: 65%;
+  width: 80%;
 }
 
 .form-section {
@@ -60,11 +75,73 @@ body {
   flex-direction: column;
 }
 
-.signup-form input {
-  display: block;
+.trial-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 8px;
+  padding: 15px 0;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  font-size: 14px;
+  margin: 0;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 8px;
+  padding: 25px 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  display: block;
+  width: 375px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 15px 0;
+}
+
+.signup-form input::placeholder {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.submit-input {
+  background-color: hsl(154, 59%, 51%);
+  font-size: 12px;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  transition: 0.2s;
+}
+
+.submit-input:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.tos-disclaimer {
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.tos-link:hover {
+  cursor: pointer;
 }
