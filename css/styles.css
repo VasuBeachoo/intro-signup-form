@@ -103,6 +103,12 @@ body {
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
 .signup-form input[type="text"],
 .signup-form input[type="email"],
 .signup-form input[type="password"] {
@@ -111,13 +117,31 @@ body {
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
   padding: 15px 20px;
-  margin: 15px 0;
 }
 
 .signup-form input::placeholder {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.2px;
+}
+
+.signup-form input:focus {
+  outline: 1px solid hsl(248, 32%, 49%);
+}
+
+.error-msg {
+  align-self: flex-end;
+  font-size: 9.5px;
+  font-style: italic;
+  width: fit-content;
+  color: hsl(0, 100%, 74%);
+  margin: 5px 5px 0 0;
+}
+
+.error-icon {
+  position: absolute;
+  width: 21px;
+  transform: translate(380px, 14px);
 }
 
 .submit-input {
@@ -128,6 +152,8 @@ body {
   border-radius: 4px;
   letter-spacing: 1px;
   padding: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   transition: 0.2s;
 }
 
